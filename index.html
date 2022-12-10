@@ -62,8 +62,7 @@
             <h1>You can FIND your Contact</h1>
 
             <div class="search-input">
-                <input type="search" placeholder="
-            Enter by Name......" name="" id="search">
+                <input value="" type="text" placeholder="Enter by Name......" name="" id="search">
 
             </div>
 
@@ -72,15 +71,47 @@
     </section>
     <section class="home-container">
         <div class="show-result">
-            <li>a</li>
-            <li>b</li>
-            <li>c</li>
-            <li></li>
-            <li></li>
+            <span>No Data to Show</span>
+
         </div>
     </section>
 
 
+    <script src="js/friends_list.js"></script>
+    <script>
+        let input = document.querySelector('#search');
+        let showResult = document.querySelector('.show-result');
+
+        
+        input.addEventListener('keypress', function() {
+            var text = '';
+            let searchArry = [];
+
+            if (input.value != "") {
+
+                for (const friend of friends_list) {
+                    if (friend.name.match(input.value) != null) {
+                        searchArry.push(friend.name);
+                    }
+                }
+                
+                var li = '';
+         
+                for(let friends of searchArry){
+                    var liSingle = `<li>${friends}</li>`;
+                     li = li.concat(liSingle);
+                }
+            }
+            
+            text = '<ul>' + li + '</ul>';
+            if (searchArry.length != 0) {
+                   showResult.innerHTML = text;
+            }else{
+                
+                showResult.innerHTML = `<span>Anything Wrong</span>`;
+            }
+        });
+    </script>
 
 </body>
 
