@@ -1,7 +1,7 @@
 let friends_list =[
     {
         'id' : "1",
-        'name' : "Sahos Mia",
+        'name' : "Sahos1",
         'phone' : "01952827301",
         'date_of_birth' : "14 Dec, 2022",
         'blood' : "O-",
@@ -43,7 +43,7 @@ let friends_list =[
     },
     {
         'id' : "7",
-        'name' : "Sahos Ridoy",
+        'name' : "Sahos2",
         'phone' : "01952827301",
         'date_of_birth' : "14 Dec, 2022",
         'blood' : "O-",
