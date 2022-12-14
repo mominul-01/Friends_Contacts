@@ -1,7 +1,7 @@
 let input = document.querySelector('#search');
-let showResult = document.querySelector('#parent-list');
-let details = document.querySelector('.details_page_h1');
-let ulList = document.getElementById("parent-list");
+let showResult = document.querySelector('#parent_list');
+let details = document.querySelector('.modal-title');
+let ulList = document.getElementById("parent_list");
 let person_details = document.querySelector(".person_details");
 
 
@@ -16,7 +16,7 @@ if(input !== undefined && input !== null){
             var li = '';
 
             for (const [i,friend] of friends_list.entries()) {
-                if (friend.name.match(input.value) != null || friend.blood.match(input.value) != null) {
+                if (friend.name.match(input.value) != null || friend.blood.match(input.value) != null || friend.phone.match(input.value) != null) {
                     searchArry.push(i);
                 }
             }
@@ -29,22 +29,20 @@ if(input !== undefined && input !== null){
             }
         }
 
-        text = '<ul>' + li + '</ul>';
+        text = li ;
         
         if (searchArry.length != 0) {
-                showResult.innerHTML = text;
-            
+            showResult.innerHTML = text;
         }else{
-            
-            showResult.innerHTML = `<span>Anything Wrong</span>`;
+            showResult.innerHTML = `<li class="not_found">Not Found Any Data. Please Try Valid Data</li>`;
         }
     });
 }
 
 if(ulList !== undefined && ulList !== null){
-    var text2 = '';
-    var li2 = '';
     ulList.addEventListener("click",function(e) {
+        var li2 = '';
+    var text2 = '';
         var clickAbleID = "";
         clickAbleID = e.target.getAttribute('value');
         details.textContent = friends_list[clickAbleID].name;

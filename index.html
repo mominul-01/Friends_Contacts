@@ -15,72 +15,29 @@
     <title>Friends Fiend</title>
 </head>
 <style>
-    body {
-
-        background-color: cornflowerblue;
-    }
-
-    .home-container {
-        display: flex;
-        justify-content: center;
-    }
-
-    .search-section {
-        margin-top: 50px;
-    }
-
-    input {
-        font-size: 2.2rem;
-        margin-top: 5px;
-        padding: 15px;
-        border-radius: 10px;
-        height: 60px;
-        width: 100%;
-        border: none;
-        background: #f1f1f1;
-        text-align: left;
-
-
-    }
-
-
-    h1 {
-        font-size: 3.5rem;
-        text-align: center;
-    }
-
-
-
-    .show-result {
-        display: inline-block;
-        justify-content: center;
-        margin: 20px;
-
-    }
+    
 </style>
 
 <body>
+    <section class="home_container">
+        <div class="search_section">
+            <h1>You can find your contact here</h1>
+            <div class="search_input">
+                <input value="" type="text" placeholder="Enter by Name, Phone, Email, Facebook Id, Blood Group......" name="" id="search">
+                
 
-    <section class="home-container">
-        <div class="search-section">
-
-            <h1>You can FIND your Contact</h1>
-
-            <div class="search-input">
-                <input value="" type="text" placeholder="Enter by Name......" name="" id="search"
-                    autofocus>
+                <div class="show_result">
+                    <ul id="parent_list">
+                        <li class="no_data">Please search first</li>
+                    </ul>
+                </div>
             </div>
-
-
         </div>
     </section>
-    <section class="home-container">
-        <div class="show-result">
-            <ul id="parent-list">
-                <li>not show any data</li>
-            </ul>
-        </div>
-    </section>
+
+
+        
+
 
 
     <!-- Modal -->
@@ -88,7 +45,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Details</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Detagils</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -100,7 +57,7 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>

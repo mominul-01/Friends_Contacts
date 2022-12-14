@@ -1,4 +1,4 @@
-body {
+/* body {
     background-image: url("images/bg.jpg");
 
 }
@@ -60,4 +60,91 @@ p {
     font-size: 25px;
     margin: 5px;
     text-align: center;
+} */
+
+
+
+/* Index Page CSS  */
+body {
+    background-color: cornflowerblue;
+}
+
+.home_container {
+	display: flex;
+	justify-content: center;
+	margin: 0 3rem;
+}
+
+.search_section {
+	margin-top: 7%;
+	/* width: 30%; */
+}
+
+input {
+	font-size: 1.2rem;
+	margin-top: 5px;
+	padding: 7px;
+	border-radius: 4px;
+	height: 40px;
+	width: 100%;
+	border: none;
+	background: #f4f4f4;
+	text-align: left;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.show_result {
+    /* display: inline-block;
+    justify-content: center;
+    margin: 20px; */
+
+}
+
+
+#parent_list {
+	padding: 20px;
+	background: rgba(6, 6, 6, 0.06);
+	border-radius: 4px;
+	margin-top: 15px;
+}
+
+#parent_list li {
+    margin: 5px 0; 
+    list-style-type: none;
+}
+.no_data{
+    text-align: center;
+}
+.not_found{
+    color: rgb(146, 10, 10);
+    text-align: center;
+}
+button{
+    width: 100%;
+}
+
+
+
+/* MOdal  */
+.modal-title {
+	color: #6495ed;
+	font-weight: 600;
+	font-size: 25px;
+}
+
+
+@media screen and (max-width: 450px){
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        color: #fff;
+    }
+    
 }
