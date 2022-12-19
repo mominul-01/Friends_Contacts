@@ -1,9 +1,11 @@
 let friends_list =[
     {
-        'name' : "Sahos1",
+        'name' : "Sahos",
         'phone' : "01952827301",
-        'date_of_birth' : "14 Dec, 2022",
+        'date_of_birth' : "4th July, 1999",
         'blood' : "O-",
+        'facebook' : null, 
+        'email' : 'sahosmia.webdev@gmail.com',
     },
     {
         'name' : "Momin",
